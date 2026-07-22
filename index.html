@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday, Aru ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Poppins:wght@300;400;500;600&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================================= -->
+<!-- LOADING SCREEN -->
+<!-- ============================================= -->
+<div id="loading-screen">
+  <div class="loader-content">
+    <span class="loader-mark">✦</span>
+    <h1 class="loader-title" id="loaderTitle">Aru's Story</h1>
+    <p class="loader-subtitle">a little light, being lit&hellip;</p>
+  </div>
+</div>
+
+<div id="celebration-burst" aria-hidden="true"></div>
+
+<!-- ============================================= -->
+<!-- AMBIENT BACKGROUND -->
+<!-- ============================================= -->
+<div id="background-effects" aria-hidden="true">
+  <div id="stars"></div>
+  <div id="petals"></div>
+  <div id="floating-hearts"></div>
+  <div id="confetti-container"></div>
+  <div id="fireworks-container"></div>
+</div>
+
+<!-- ============================================= -->
+<!-- FLOATING UI -->
+<!-- ============================================= -->
+<button id="musicToggle" aria-label="Toggle music" aria-pressed="false">
+  <span class="icon-on">♪</span>
+  <span class="icon-off">✕</span>
+</button>
+
+<button id="backToTop" aria-label="Back to top">↑</button>
+
+<div id="progressContainer" aria-hidden="true">
+  <div id="progressBar"></div>
+</div>
+
+<nav id="constellation" aria-hidden="true">
+  <div class="constellation-line"><div class="constellation-fill" id="constellationFill"></div></div>
+  <ul id="constellationDots"></ul>
+</nav>
+
+<!-- ============================================= -->
+<!-- HERO -->
+<!-- ============================================= -->
+<section id="hero" class="fullscreen">
+  <div class="hero-image" data-parallax><img src="Cover.jpeg" alt="Us" loading="eager"></div>
+  <div class="hero-scrim"></div>
+  <div class="hero-vignette"></div>
+
+  <div class="hero-content">
+    <span class="eyebrow script">a story, still being written</span>
+    <h1 class="shimmer-text">Happy Birthday,<br>My Favourite Chapter</h1>
+    <p>Every memory with you deserves its own page.<br>Here's ours — from the very first day, to right now.</p>
+    <button id="beginStory" class="btn-primary">Begin Our Story</button>
+  </div>
+
+  <div class="scroll-cue" aria-hidden="true"><span></span></div>
+</section>
+
+<!-- ============================================= -->
+<!-- STORY -->
+<!-- ============================================= -->
+<main id="story">
+
+  <section id="chapter1" class="chapter" data-chapter="1" data-title="Where It All Began">
+    <div class="fairy-divider" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+    <div class="chapter-inner">
+      <div class="chapter-image"><img src="Firstsaw.jpeg" alt="Where it all began" loading="lazy"></div>
+      <div class="chapter-text">
+        <span class="chapter-number">Chapter 01</span>
+        <h2>Where It All Began</h2>
+        <p>I don't remember deciding to notice you — I just did. One glance, and somehow the rest of the room got quieter. I didn't know it yet, but that was the first line of us.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="chapter2" class="chapter reverse" data-chapter="2" data-title="Our First Date">
+    <div class="fairy-divider" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+    <div class="chapter-inner">
+      <div class="chapter-image"><img src="Zerodegree.jpeg" alt="Our first date" loading="lazy"></div>
+      <div class="chapter-text">
+        <span class="chapter-number">Chapter 02</span>
+        <h2>Our First Date</h2>
+        <p>Nervous laughs, too much conversation for one evening, and coffee that went cold because neither of us wanted to stop talking. I remember thinking — I hope this isn't the only time.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="chapter3" class="chapter" data-chapter="3" data-title="Our First Photo Together">
+    <div class="fairy-divider" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+    <div class="chapter-inner">
+      <div class="chapter-image"><img src="Freshers.jpeg" alt="Our first photo together" loading="lazy"></div>
+      <div class="chapter-text">
+        <span class="chapter-number">Chapter 03</span>
+        <h2>Our First Photo Together</h2>
+        <p>Neither of us posed for it properly, and it's still my favourite picture on my phone. Proof that even at the very beginning, we already looked like we belonged in the same frame.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="chapter4" class="chapter reverse" data-chapter="4" data-title="Our First Concert">
+    <div class="fairy-divider" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+    <div class="chapter-inner">
+      <div class="chapter-image"><img src="Concert.jpeg" alt="Our first concert" loading="lazy"></div>
+      <div class="chapter-text">
+        <span class="chapter-number">Chapter 04</span>
+        <h2>Our First Concert</h2>
+        <p>Loud music, terrible phone signal, and your hand in mine the entire night. I don't remember a single song they played — I just remember singing along with you.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="chapter5" class="chapter" data-chapter="5" data-title="Our First Garba">
+    <div class="fairy-divider" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+    <div class="chapter-inner">
+      <div class="chapter-image"><img src="Garba.jpeg" alt="Our first Garba" loading="lazy"></div>
+      <div class="chapter-text">
+        <span class="chapter-number">Chapter 05</span>
+        <h2>Our First Garba</h2>
+        <p>Lights strung up like stars above us, and you twirling like you were born for that beat. I spent half the night dancing, and the other half just watching you shine.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="chapter6" class="chapter reverse" data-chapter="6" data-title="Your First Birthday With Me">
+    <div class="fairy-divider" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+    <div class="chapter-inner">
+      <div class="chapter-image"><img src="Firstbdy.jpeg" alt="Your first birthday with me" loading="lazy"></div>
+      <div class="chapter-text">
+        <span class="chapter-number">Chapter 06</span>
+        <h2>Your First Birthday With Me</h2>
+        <p>I wanted that day to feel like you — bright, a little chaotic, and full of love. Watching you smile at your own cake is still one of my favourite things I've ever seen.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="chapter7" class="chapter" data-chapter="7" data-title="Our First Diwali">
+    <div class="fairy-divider" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+    <div class="chapter-inner">
+      <div class="chapter-image"><img src="Diwali.png" alt="Our first Diwali" loading="lazy"></div>
+      <div class="chapter-text">
+        <span class="chapter-number">Chapter 07</span>
+        <h2>Our First Diwali</h2>
+        <p>Diyas in every corner, your favourite song playing somewhere in the background, and you laughing at something silly I said. That's the kind of light I want in every year with you.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================= -->
+  <!-- THINGS I LOVE ABOUT YOU -->
+  <!-- ========================================= -->
+  <section id="loveCards">
+    <div class="ornament" aria-hidden="true">❦</div>
+    <div class="section-heading">
+      <span class="eyebrow script">little things</span>
+      <h2>Things I Love About You</h2>
+    </div>
+    <div class="cards-container">
+      <div class="love-card"><span>👀</span><h3>Your Eyes</h3></div>
+      <div class="love-card"><span>😊</span><h3>Your Smile</h3></div>
+      <div class="love-card"><span>🥹</span><h3>Your Cuteness</h3></div>
+      <div class="love-card"><span>💇🏻‍♀️</span><h3>The Way You Fix Your Hair</h3></div>
+      <div class="love-card"><span>🍳</span><h3>When You Cook</h3></div>
+      <div class="love-card"><span>😂</span><h3>Your Khikhikhiii</h3></div>
+      <div class="love-card"><span>❤️</span><h3>Every Version Of You</h3></div>
+    </div>
+  </section>
+
+  <!-- ========================================= -->
+  <!-- LOVE LETTER -->
+  <!-- ========================================= -->
+  <section id="letterSection">
+    <div class="ornament" aria-hidden="true">❦</div>
+    <div class="section-heading">
+      <span class="eyebrow script">for you</span>
+      <h2>A Letter From My Heart</h2>
+      <p class="section-hint">tap the envelope to open it</p>
+    </div>
+
+    <div id="envelope" role="button" tabindex="0" aria-expanded="false" aria-label="Open the letter">
+      <div class="envelope-shadow"></div>
+      <div class="letter">
+        <div class="letter-content">
+          <p>Dear Aruuu ❤️</p>
+          <p>Happy Birthday, my favorite chapter. ❤️</p>
+          <p>Just wanted to thank you for always being there for me, for supporting me, and for making even the ordinary days feel special. ♡</p>
+          <p>Since it's your birthday, I am writing this letter to let you know how much you mean to me — more than words can ever define.</p>
+          <p>Thank you for staying by my side. You always have me by your side too. ♡</p>
+          <p>You'll always have someone who is proud of you and your wins. ♡♡</p>
+          <p>I hope this year brings you endless happiness, beautiful memories, and every dream you've been working so hard for. ♡</p>
+          <p>Thank you for being you.<br>Happy Birthday, my favorite person. ❤️</p>
+          <h3>With all my love,<br>Karan ❤️</h3>
+        </div>
+      </div>
+      <div class="envelope-front">
+        <div class="envelope-flap"></div>
+        <span class="seal">❤️</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================= -->
+  <!-- BIRTHDAY CAKE -->
+  <!-- ========================================= -->
+  <section id="birthdayCake">
+    <div class="ornament" aria-hidden="true">❦</div>
+    <div class="section-heading">
+      <span class="eyebrow script">one last surprise</span>
+      <h2>Make A Wish</h2>
+      <p class="section-hint">blow out the candles, and make it count</p>
+    </div>
+
+    <div id="cakeContainer">
+      <div id="cake">
+        <div class="candles">
+          <div class="candle"><span class="flame"></span></div>
+          <div class="candle"><span class="flame"></span></div>
+          <div class="candle"><span class="flame"></span></div>
+        </div>
+        <div class="cake-body">
+          <div class="cake-tier tier-top"></div>
+          <div class="cake-tier tier-bottom"></div>
+        </div>
+      </div>
+      <button id="celebrateButton" class="btn-primary">🎉 Celebrate</button>
+      <p id="wishMessage" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <!-- ========================================= -->
+  <!-- ENDING -->
+  <!-- ========================================= -->
+  <section id="ending" class="fullscreen">
+    <div class="ending-image" data-parallax><img src="Ending.png" alt="Happy Birthday" loading="lazy"></div>
+    <div class="ending-scrim"></div>
+    <div class="ending-content">
+      <span class="eyebrow script">our story doesn't end here&hellip;</span>
+      <h1 class="shimmer-text">Happy Birthday,<br>My Favourite Chapter</h1>
+      <p>Thank you for every smile, every laugh, every memory, and every beautiful, ordinary moment. You have made my life more beautiful than I ever imagined.</p>
+      <h3 class="script">Forever Yours,<br>Karan ❤️</h3>
+    </div>
+  </section>
+
+  <!-- ========================================= -->
+  <!-- SORRY -->
+  <!-- ========================================= -->
+  <section id="sorrySection">
+    <div class="sorry-glow" aria-hidden="true"></div>
+    <div class="sorry-hearts" aria-hidden="true">
+      <span>♡</span><span>♡</span><span>♡</span><span>♡</span><span>♡</span>
+    </div>
+    <div class="sorry-content">
+      <span class="eyebrow script">one more thing&hellip;</span>
+      <p>I'm sorry for not being there on your birthday.<br>Your birthday is something I never wanted to miss.</p>
+      <p>But it was not possible, and I'm sorry for that.<br>Do not ever think your birthday is not special to me.</p>
+      <p>Your birthday might not be that special for you —<br>but for me?</p>
+      <p class="sorry-emphasis script">It's an occasion. It's a festival. ❤️</p>
+      <p class="sorry-signoff script">Happy Birthday, Babuuu 🥹❤️</p>
+    </div>
+  </section>
+
+</main>
+
+<audio id="backgroundMusic" loop preload="none">
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
